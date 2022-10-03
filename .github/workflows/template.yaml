@@ -42,13 +42,15 @@ env:
   # REPO means the OpenWrt repo you want to build from in this workflow. 
   # You can modify the REPO_NAME to any name you want, but remember not to let it 
   # have the same name in other workflows.
-  REPO_NAME: example-name
-  REPO_URL: https://github.com/example/example
+  REPO_NAME: cm520-op
+  #REPO_NAME: example-name
+  REPO_URL: https://github.com/85928385/cm520-op
+  #REPO_URL: https://github.com/example/example
   REPO_BRANCH: master
   # FEEDS_CONF and CONFIG_FILE is the name of your own config files for compiling,
   # you should upload these files into the root directory of your workflow repo.
   FEEDS_CONF: example-feeds.conf.default
-  CONFIG_FILE: example.config
+  CONFIG_FILE: .config
   # DIY_P1_SH is the name of extra bash script you want to execute before feeds 
   # update&install and DIY_P2_SH is the one after feeds update&install. You can 
   # modify the initial settings of your firmware through these two scripts. If 
